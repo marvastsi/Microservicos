@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  micross_bd:
+    image: mysql:latest
+    container_name: micross_bd
+    environment:
+      MYSQL_ROOT_PASSWORD: rootroot 
+      MYSQL_USER: root      
+      MYSQL_PASS: admin      
+    ports:
+      - "3308:3306"
+    networks:
+      - micross-network
+    volumes:
+      - '/opt/programas/mysql_data:/var/lib/mysql:rw'
+
+networks:
+  micross-network:    
+    driver: bridge
+    #external:
+    #  name: minha-rede
+

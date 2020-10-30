@@ -1,6 +1,11 @@
 # Microservicos
 Arquitetura Microserviços com Spring Cloud Netflix
 
+### Docker Mysql e RabbitMQ
+- A base de dados está configurada em uma docker no path: _/compose/mysql_
+- O RabbitMQ está configurado em uma docker no path: _/compose/rabbitmq_
+- Para Subir as dockers basta acessar o diretório específico de cada uma e utilizar o comando `docker-compose up`.Adicionalmente pode-se usar o parametro **-d** para liberar o terminal. (dependendo da instalação pode ser necessário utilizar o _sudo_)
+
 ### Configuração do RabbitMQ
 - Após a devida implementação nos microserviços deve-se:
   1. subir a docker do rabbitmq (/compose/rabbitmq)

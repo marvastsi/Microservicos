@@ -13,3 +13,6 @@ Arquitetura Microserviços com Spring Cloud Netflix
   3. subir os dois microserviços a fim de que sejam criadas as exchanges
   4. criar uma fila (queue) na aba **queues** com o nome utilizado no listener do ProdutoReceiveMessage
   5. fazer o bind, da fila criada no passo **4**, ao exchange do CRUD, utilizando a routingkey (routingkey)
+
+> **Nota** O código usa notações do java 10+ como: `var`
+

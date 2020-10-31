@@ -17,6 +17,19 @@ Arquitetura Microserviços com Spring Cloud Netflix
 ### Acessar Eureka via browser:
 * Para acessar o Eureka via browser basta acessar a url [http://localhost:8761/registry](http://localhost:8761/registry/)
 
+### Zuul - API gateway
+* Após a configuração do gateway com o zuul o path das rotas passa a ser comum. Ex: `http://localhost:8080/api/{path_microserviço}`.
+* Além disso ao acessar um serviço através do gateway, caso haja mais de uma instância do mesmo, o Eureka fará o _load balance_ alternando entre as instâncias.
 
-> **Nota** O código usa notações do java 10+ como: `var`
 
+---
+ > **Nota** O código usa notações do java 10+ como: `var`
+
+---
+
+
+[https://spring.io/projects/spring-cloud-netflix](https://spring.io/projects/spring-cloud-netflix "Spring Cloud Netflix")
+
+[https://spring.io](https://spring.io/ "Spring Framework")
+
+[https://start.spring.io](https://start.spring.io/ "Inicializar projetos com Spring")
